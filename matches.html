@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IPLStats | Matches</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">IPLStats</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="teams.html">Teams</a></li>
+    <li><a href="players.html">Players</a></li>
+    <li><a href="matches.html" class="active">Matches</a></li>
+    <li><a href="points.html">Points Table</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="content">
+  <h2>IPL Matches</h2>
+
+  <select onchange="filterMatches(this.value)">
+    <option value="all">All Teams</option>
+    <option value="CSK">CSK</option>
+    <option value="DC">DC</option>
+  </select>
+
+  <div id="matchList"></div>
+</section>
+
+<footer>
+  <p>© 2026 IPLStats</p>
+</footer>
+
+<script src="matches.js"></script>
+</body>
+</html>
